@@ -19,11 +19,10 @@ body{
 }
 
 .logo img{
-    width: 100px;
+    width: 80px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 20%;
     margin-left: 10px;
-    align-items: baseline;
 }
 
 .search-bar{
@@ -57,6 +56,12 @@ body{
     text-decoration: none;
     font-size: 18px;
     margin-right: 10px;
+    transition: 0.3s;
+}
+
+.login-button:hover{
+    background-color: rgb(233, 233, 233);
+    color: rgb(0, 0, 0);
 }
 
 .register-button{
@@ -66,6 +71,12 @@ body{
     border-radius: 20px;
     text-decoration: none;
     font-size: 18px;
+    transition: 0.3s;
+}
+
+.register-button:hover{
+    background-color: rgb(233, 233, 233);
+    color: rgb(0, 0, 0);
 }
 
 .second-bar{
@@ -98,46 +109,69 @@ body{
 }
 
 .welcome{
-    margin-top: 150px;
+    margin-top: 80px;
     padding: 20px;
     text-align: center;
     color: rgb(255, 255, 255);
-    font-size: 24px;
+    font-size: clamp(20px, 5vw, 30px);
     background-color: rgba(0, 0, 0, 0.5);
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.infobemvindo{
+    margin-top: 20px;
+    font-size: clamp(10px, 3vw, 20px);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
 .trilhaseparator{
-    margin-top: 150px;
+    margin-top: 0px;
     width: 100%;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 255, 0);
-    font-size: 40px;
+    font-size: clamp(10px, 5vw, 20px);
     font-family: Arial, Helvetica, sans-serif;
-    padding-right: 5%;
+    padding-right: 10%;
     text-align: end;
 }
 
 .parquesseparator{
-    margin-top: 150px;
+    margin-top: 80px;
     width: 100%;
     background-color: rgb(0, 255, 0);
     color: rgb(255, 255, 255);
-    font-size: 40px;
+    font-size: clamp(10px, 5vw, 20px);
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 5%;
+    padding-left: 10%;
     text-align: start;
 }
 
+.parques-container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.parques-container img{
+    width: 33.3333%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
 .cachoeirasseparator{
-    margin-top: 150px;
+    margin-top: 80px;
     width: 100%;
     background-color: rgb(0, 255, 0);
     color: rgb(255, 255, 255);
-    font-size: 40px;
+    font-size: clamp(10px, 5vw, 20px);
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 5%;
+    padding-left: 10%;
     text-align: start;
+    word-wrap: break-word;
 }
 
 .footer-content{
@@ -146,7 +180,7 @@ body{
     padding: 20px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: clamp(10px, 5vw, 20px);
 }
 
 .social-media a{
