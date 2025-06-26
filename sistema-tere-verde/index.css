@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-image: url(imagens/fundoserra.jpeg);
+    background-attachment: fixed;
+}
+
+.top-bar{
+    width: 100%;   
+    background-color: rgba(118, 77, 12, 0.669);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 20%;
+    margin-left: 10px;
+}
+
+.search-bar{
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input{
+    width: 90%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255, 0.6);
+    color: rgb(0, 0, 0);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.login-area{
+    display: flex;
+    align-items: center;
+}
+
+.login-button{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 2rem;
+    transition: 0.3s;
+    margin-bottom:1rem;
+}
+
+.login-button:hover{
+    background-color: rgb(233, 233, 233);
+    color: rgb(0, 0, 0);
+}
+
+.second-bar{
+  background-color: rgba(7, 85, 20, 0.651 );
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  display: flex;
+  list-style: none;
+}
+
+.second-bar a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.second-bar a:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.welcome{
+    margin-top: 190px;
+    padding: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: clamp(20px, 5vw, 30px);
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.infobemvindo{
+    margin-top: 20px;
+    font-size: clamp(10px, 3vw, 20px);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.trilhaseparator{
+    margin-top: 0px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(55, 91, 30);
+    font-size: clamp(10px, 5vw, 20px);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 10%;
+    text-align: end;
+}
+
+.parquesseparator{
+    margin-top: 0px;
+    width: 100%;
+    background-color: rgb(55, 91, 30);
+    color: rgb(255, 255, 255);
+    font-size: clamp(10px, 5vw, 20px);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10%;
+    text-align: start;
+}
+
+.parques-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.pqbox{
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+.pqbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.overlay h2{
+    font-size: clamp(20px, 5vw, 30px);
+    margin-bottom: 10px;
+    color: rgb(55, 91, 30);
+}
+
+.pqbox:hover .overlay{
+    opacity: 1;
+}
+
+.clique-parques{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: clamp(20px, 5vw, 30px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cachoeirasseparator{
+    margin-top: 80px;
+    width: 100%;
+    background-color: rgb(55, 91, 30);
+    color: rgb(255, 255, 255);
+    font-size: clamp(10px, 5vw, 20px);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10%;
+    text-align: start;
+    word-wrap: break-word;
+}
+
+.footer-content{
+    background-color: rgba(255, 255, 255);
+    color: rgb(55, 91, 30);
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(10px, 5vw, 20px);
+    position: relative;
+    bottom: 0;
+}
+
+.social-media a{
+    text-decoration: none;
+    color: rgb(55, 91, 30);
+    margin: 0 10px;
+}
+
+
+.drop-menu {
+    display: none;
+    position: absolute; 
+    background-color: rgb(118, 77, 12, 0.8); 
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1; 
+    list-style: none; 
+    padding: 0;
+    margin-top: 0;
+}
+
+
+.drop-menu li a {
+    color: white; 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; 
+    text-align: left; 
+    white-space: nowrap; 
+}
+
+
+.drop-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+
+
+.drop-filho:hover .drop-menu {
+    display: block;
+}
+
+
+.drop-filho {
+    position: relative; 
+    display: inline-block; 
+
+}
+.drop-filho > a {
+    display: block; 
+    padding: 14px 16px; 
+}
